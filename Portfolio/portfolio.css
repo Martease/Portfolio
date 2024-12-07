@@ -1,0 +1,526 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.jost-<uniquifier> {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 25px;
+  background-color: #ffffff;
+  color: orangered;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+ .container {
+  padding: 10px 10px;
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  size: cover;
+  border-radius: 70px;
+  padding: 10px;
+  justify-content: space-around;
+
+}
+
+.navlist {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navlist li {
+  font-size: medium;
+  text-decoration: none;
+  position: relative;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+
+.navlist a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: orangered;
+  bottom: -3px;
+  left: 0;
+  transition: ease .40s;
+}
+
+.navlist a:hover::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 20px;
+  width: 10px;
+  height: auto;
+  color: orangered;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul li {
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  margin: 20px 30px;
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: ;
+  flex-wrap: wrap;
+  color: orangered;
+}
+
+.top-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 30px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 30px;
+  color: orangered;
+  font-size: p-font;
+  font-weight: 500;
+  transition: ease .50s;
+}
+
+.top-btn:hover {
+transform: scale(1.1);
+background-color: var(--main-color);
+border: 2px solid var(--main-color);
+color: orangered;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Ensure it takes full viewport height */
+  text-align: center; /* Center text inside each element */
+  gap: 5px;
+  margin-bottom: 0;
+}
+
+.home-text h1 {
+  margin: 10px 0px 25px;
+  font-size: var(big-font);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.home-text h5 {
+  margin-bottom: 25px;
+  font-size: px;
+  font-weight: 500;
+
+}
+
+span {
+  color: black;
+}
+
+.home-text h3 {
+  color: orangered;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-text p {
+  font-size: var(--p-font);
+  color: black;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.background-image {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: auto;
+  border-radius: 70px;
+  padding: 10px;
+  justify-content: space-around;
+  margin-top: -10;
+  top: -20px;
+}
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: normal;
+  color: black;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Jost", sans-serif;
+  color: orangered;
+  margin-top: 0;
+}
+
+.social {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  width: 240px;
+  height: auto;
+  border-radius: 60px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.social a {
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: orangered;
+  font-size: 17px;
+  color: white;
+  margin-right: 22px;
+  margin-bottom: 30px;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+  background: black;
+  transition: .5s;
+}
+
+section {
+  padding: 100px 18%;
+}
+
+.sub-service img {
+  display: inline-flexbox;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sub-box {
+  padding: 45px 45px 45px 45px;
+  transition: ease .50s;
+  cursor: pointer;
+}
+
+.items {
+  margin-top: 5px;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.items h3 {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.item p {
+  font-size: var(--p-font);
+  line-height: 29px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  grid-gap: 2rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  width: 620px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about h2 {
+  color: black; 
+  align-items: ;
+}
+
+.about h3 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 8px 0px 25px;
+  line-height: 1.1;
+}
+
+.about p {
+  max-width: 550px;
+  font-size: var(--p-font);
+  color: black;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px));
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.row {
+  background: #ffffff;
+  box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+  border-radius: 12px;
+  padding: 35px 35px 35px 35px 35px;
+  transition: ease .45s;
+  cursor: pointer; 
+}
+
+.s img {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  background: #f75124;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.s.s-2 img {
+  background: #baebcd;
+}
+
+.s.s-3 img {
+  background: #d9d1fa;
+}
+
+.s.s-4 img {
+  background: #faedce;
+}
+
+.services h5 {
+  font-size: 15px;
+  color: #191919;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.services h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.services span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f75124;
+}
+
+.services p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #191919;
+  align-items: end;
+}
+
+.row:hover {
+  transform: scale(1.1);
+  background: -moz-linear-gradient(2.1);
+  transition: .5s;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: var(--h2-font);
+  font-weight: 500;
+  margin: 7px 0px 20px;
+  line-height: 1.1;
+}
+
+.heading h3 {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.heading p {
+  font-size: var(--p-font);
+  color: black;
+  line-height: 28px;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 10rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  max-width: 100%;
+  width: 550px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  transition: all .40s;
+}
+
+.layer:hover {
+  background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+}
+
+.layer h3 {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all .40s;
+}
+
+.layer:hover h3 {
+  bottom: 52%;
+  opacity: 1;
+}
+
+.certificates {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.certificates img {
+  max-width: 100%;
+  width: 450px;
+  height: 350px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: auto;
+}
+
+/* Contact Section Container */
+.contact {
+  background: #d9d1fa;
+  width: 100%;
+  margin: 100px auto;
+  padding: 70px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.center h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: var(--bg-color);
+}
+
+center p {
+  font-size: var(--p-font);
+  color: var(--bg-color);
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+.contact .action form input[type="email"] {
+  max-width: 100px;
+  width: 470px;
+  padding: 10px 5px;
+  background: white;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  margin: 0 10px 20px 0;
+  border-radius: 30px;
+}
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
