@@ -2,7 +2,7 @@
     
     const contactContainer = document.getElementById("contact");
   
-    contactContainer.innerHTML = `
+    //contactContainer.innerHTML = `
       <div class="contact-container">
         <h2>Contact Us</h2>
         <form id="contactForm">
@@ -20,8 +20,7 @@
         <div id="successMessage" class="success-message" style="display: none;">
           Thank you for your message! We will get back to you soon.
         </div>
-      </div>
-    `;
+      </div>;//
   
     const form = document.getElementById("contactForm");
     const successMessage = document.getElementById("successMessage");
