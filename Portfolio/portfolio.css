@@ -454,6 +454,7 @@ section {
 .layer:hover h3 {
   bottom: 52%;
   opacity: 1;
+  color: #f75124;
 }
 
 .certificates {
