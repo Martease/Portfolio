@@ -1,0 +1,1 @@
+<a href="path_to_your_file/Junior_Frontend_Dev_CV.pdf" download>Download Your CV</a>
